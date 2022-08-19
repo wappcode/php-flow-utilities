@@ -33,7 +33,7 @@ class UploadFileManager {
         $config = new Config();
         $config->setTempDir($tmpDir);
         $request = new Request();
-        $uploadFolder = $tmpDir;
+        $uploadFolder = $uploadsDir;
         $requestName = $request->getFileName();
         $standardizeName = standardizeFileName($requestName);
         $uploadFileName = uniqid().self::FILENAME_SEPARATOR.$standardizeName; // The name the file will have on the server

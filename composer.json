@@ -1,5 +1,5 @@
 {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "wappcode/flow-utilities",
     "description": "Utilidades para carga y descarga de archivos utilizando la libreria FlowJs",
     "type": "library",
@@ -9,12 +9,10 @@
     },
     "autoload": {
         "files": [
-            
             "FlowUtilities/src/FileFunctions.php"
         ],
         "psr-4": {
             "GPDCore\\": "FlowUtilities/src/"
         }
     }
-    
 }

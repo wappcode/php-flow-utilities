@@ -48,7 +48,7 @@ function standardizeFileName($fileName): string {
     $separator = '-';
     $standardizeName = preg_replace('/\W+/', $separator, $standardizeName);
     $standardizeName = strtolower(trim($standardizeName, $separator));
-    $resultName = $standardizeName.".".$extension;
+    $resultName = empty($extension) ? $standardizeName : $standardizeName.".".$extension;
     return strtolower($resultName);
 }
 
